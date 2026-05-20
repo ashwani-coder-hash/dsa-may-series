@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    vector<int> arr = {10, 20, 10, 5, 15};
+    vector<int> arr = {30, 10, 10, 5, 50};
     int n = arr.size();
 
     
