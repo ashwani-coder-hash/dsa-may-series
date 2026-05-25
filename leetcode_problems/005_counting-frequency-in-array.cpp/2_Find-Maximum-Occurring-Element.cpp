@@ -7,6 +7,8 @@ int main()
     int n = arr.size();
     vector<bool> visited(n,false);
     
+    int max_freq =0;
+    int ans =-1;
 
 
     for(int i=0;i<n;i++)
@@ -25,10 +27,16 @@ int main()
                 count++;
             }
         }
-        cout << arr[i] << " -> "
-             << count << endl;
+       
+
+             if(count>max_freq)
+             {
+                max_freq =count;
+                ans =arr[i];
+             }
         
     }    
+    cout<<ans;
 
  
 }
